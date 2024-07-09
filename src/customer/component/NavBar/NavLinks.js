@@ -14,7 +14,7 @@ export const NavLinks = {
         sections: [
           {
             id: 'packages',
-            name: 'Pooja Packages for',
+            name: 'Samagrii for',
             items: [
               { name: 'Rudrabhishek', href: '#' },
               { name: 'Ganesh Chaturthi', href: '#' },
