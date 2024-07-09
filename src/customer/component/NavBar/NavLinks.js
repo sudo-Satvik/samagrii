@@ -13,8 +13,8 @@ export const NavLinks = {
         ],
         sections: [
           {
-            id: 'packages',
-            name: 'Samagrii for',
+            id: 'samagrii',
+            name: "Our Samagrii's",
             items: [
               { name: 'Rudrabhishek', href: '#' },
               { name: 'Ganesh Chaturthi', href: '#' },
