@@ -55,7 +55,7 @@ export default function Navigation() {
                   {NavLinks.categories.map((category) => (
                     <Tab
                       key={category.name}
-                      className="flex-1 whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-base font-medium text-gray-900 data-[selected]:border-primary-500 data-[selected]:text-primary-500"
+                      className="flex-1 uppercase font-body whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-base font-medium text-gray-900 data-[selected]:border-primary-500 data-[selected]:text-primary-500"
                     >
                       {category.name}
                     </Tab>
@@ -64,7 +64,7 @@ export default function Navigation() {
               </div>
               <TabPanels as={Fragment}>
                 {NavLinks.categories.map((category) => (
-                  <TabPanel key={category.name} className="space-y-10 px-4 pb-8 pt-10">
+                  <TabPanel key={category.name} className="uppercase font-body space-y-10 px-4 pb-8 pt-10">
                     <div className="grid grid-cols-2 gap-x-4">
                       {category.featured.map((item) => (
                         <div key={item.name} className="group relative text-sm">
@@ -75,7 +75,7 @@ export default function Navigation() {
                             <span aria-hidden="true" className="absolute inset-0 z-10" />
                             {item.name}
                           </a>
-                          <p aria-hidden="true" className="mt-1">
+                          <p aria-hidden="true" className="mt-1 capitalize">
                             Shop now
                           </p>
                         </div>
@@ -109,7 +109,7 @@ export default function Navigation() {
             <div className="space-y-6 border-t border-gray-200 px-4 py-6">
               {NavLinks.pages.map((page) => (
                 <div key={page.name} className="flow-root">
-                  <a href={page.href} className="-m-2 block p-2 font-medium text-gray-900">
+                  <a href={page.href} className="uppercase font-body -m-2 block p-2 font-medium text-gray-900">
                     {page.name}
                   </a>
                 </div>
@@ -163,13 +163,13 @@ export default function Navigation() {
               </div>
 
               {/* Flyout menus */}
-              <PopoverGroup className="hidden lg:ml-8 lg:block lg:self-stretch">
+              <PopoverGroup className="hidden lg:ml-8 lg:block lg:self-stretch uppercase font-body">
                 <div className="flex h-full space-x-8">
                   {NavLinks.categories.map((category) => (
                     <Popover key={category.name} className="flex">
                       <div className="relative flex">
                         <PopoverButton className="relative z-10 -mb-px flex items-center border-b-2 border-transparent pt-px text-sm font-medium text-gray-700 transition-colors duration-200 ease-out hover:text-gray-800 data-[open]:border-primary-500 data-[open]:text-primary-500">
-                          {category.name}
+                          SHOP
                         </PopoverButton>
                       </div>
 
